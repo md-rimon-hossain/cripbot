@@ -12745,7 +12745,12 @@ fieldset:disabled .btn {
     padding: 27px;
     text-align: center;
     text-transform: capitalize;
-    width: 20%
+    width: 300px
+}
+@media (max-width:500px) {
+    .tvl-section {
+    width: 70%
+}
 }
 
 :root {
