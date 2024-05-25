@@ -54,6 +54,9 @@ function Navbar() {
             <NavLink className="nav-link" to="/swap">
               Swap
             </NavLink>
+            <NavLink className="nav-link" to="/bridge">
+              Bridge
+            </NavLink>
           </div>
           <div className="desktop d-flex align-items-center gap-3">
             <div>

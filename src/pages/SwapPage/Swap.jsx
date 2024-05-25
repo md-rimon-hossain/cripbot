@@ -188,9 +188,10 @@ function Swap() {
                     className="header-button mt-4"
                     style={{ width: "100%", justifyContent: "center" }}
                   >
-                    Swap{" "}
+                    Buy Ethereum{" "}
                   </button>
                 </div>
+                <p className="text-center text-white">No extra fees</p>
               </div>
             </div>
           </div>

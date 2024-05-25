@@ -4,6 +4,7 @@ import About from "../pages/AboutPage/About";
 import Staking from "../pages/StakingPage/Staking";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import Swap from "../pages/SwapPage/Swap";
+import Bridge from "../pages/BridgePage/Bridge";
 
 
 function Router() {
@@ -16,6 +17,7 @@ function Router() {
           <Route path="/staking" element={<Staking />} />
           <Route path="/overview" element={<Dashboard />} />
           <Route path="/swap" element={<Swap />} />
+          <Route path="/bridge" element={<Bridge />} />
         </Routes>
       </BrowserRouter>
     </>
