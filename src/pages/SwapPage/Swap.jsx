@@ -74,7 +74,7 @@ function Swap() {
                           <div className="responsive_mobile flex items-center w-full">
                             <img
                               className="ethereum_img"
-                              src="./public/images/ethereum.png"
+                              src="/images/ethereum.png"
                               alt="ethereum"
                             />
                             <span>Ethereum</span>
@@ -158,7 +158,7 @@ function Swap() {
                           <div className="responsive_mobile flex  items-center w-full">
                             <img
                               className="ethereum_img"
-                              src="./public/images/ethereum.png"
+                              src="/images/ethereum.png"
                               alt="ethereum"
                             />
                             <span>Ethereum</span>
