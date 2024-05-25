@@ -134,7 +134,8 @@ h6 {
   display: block !important;
 }
 .hero-main {
-  background-image: url(./images/home-header.png) !important;
+
+  background-image: url("../public/images/home-header.png") !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   /* height: 100vh; */
@@ -156,7 +157,8 @@ h6 {
   text-shadow: 5px 2px rgb(253, 144, 255) 1dfb;
 }
 .inner-bg {
-  background-image: url(./images/token-layer.png);
+
+  background-image: url("../public/images/token-layer.png");
   background-repeat: no-repeat;
   background-position: 50% 200px;
 }
@@ -170,7 +172,8 @@ h6 {
   letter-spacing: 0.32px;
 }
 .bottm-bg {
-  background-image: url(./images/bottom-layer.png);
+
+  background-image: url("../public/images/bottom-layer.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -187,7 +190,8 @@ h6 {
   width: 200px;
 }
 .cpt {
-  background-image: url(./images/cpt-bg.png);
+
+  background-image: url("../public/images/cpt-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -232,7 +236,7 @@ h6 {
   width: 100%;
 }
 .choose-us {
-  background-image: url(./images/whychoose.png);
+  background-image: url(../public/images/whychoose.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -346,7 +350,7 @@ h6 {
   line-height: 41.2px;
 }
 .chart-main {
-  background-image: url(./images/chart-bg.png);
+  background-image: url("../public/images/chart-bg.png");
   padding: 200px 0px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -368,7 +372,8 @@ h6 {
 }
 /* about page css */
 .hero-about-main {
-  background-image: url(./images/header-bg.png);
+
+  background-image: url("../public/images/header-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -376,12 +381,13 @@ h6 {
   background-color: black !important;
 }
 .about-us {
-  background-image: url(./images/about-us-bg.png);
+  background-image: url("../public/images/about-us-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .main-experience {
-  background-image: url(./images/Experience-bg.png);
+
+  background-image: url("../public/images/Experience-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -405,12 +411,13 @@ h6 {
   text-transform: capitalize;
 }
 .main-introtounem {
-  background-image: url(./images/introtounem-bg.png);
+
+  background-image: url("../public/images/introtounem-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .Other-about {
-  background-image: url(./images/otherabouttonuem.png);
+  background-image: url("../public/images/otherabouttonuem.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -443,7 +450,7 @@ h6 {
   letter-spacing: 0.22px;
 }
 .community {
-  background-image: url(./images/comunity-bg.png);
+  background-image: url("../public/images/comunity-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -506,7 +513,7 @@ h6 {
   list-style-type: none;
 }
 .staking {
-  background-image: url(./images/staking-bg.png);
+  background-image: url("../public/images/staking-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -663,7 +670,7 @@ h6 {
   padding: 7px;
 }
 .overview {
-  background-image: url(./images/overview-bg.png);
+  background-image: url("../public/images/overview-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -697,7 +704,7 @@ h6 {
   border-radius: 5px;
 }
 .main-swap {
-  background-image: url(./images/staking-bg.png);
+  background-image: url("../public/images/staking-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
