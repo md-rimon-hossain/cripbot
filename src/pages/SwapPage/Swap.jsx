@@ -1,6 +1,8 @@
 import {  useEffect, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 
+import "./swap.css";
+
 function Swap() {
   const [swapToggle, setSwapToggle] = useState(false);
   const [cripBotToken, setCriptBotToken] = useState(0);
@@ -10,10 +12,12 @@ function Swap() {
   const [wethCalculatedValue, setWethCalculatedValue] = useState(0);
 
   const handleInputSwap = (e) => {
-    if (swapToggle) {
-      setCriptBotToken(Number(e.target.value));
-    } else {
-      setWeth(Number(e.target.value));
+    if (Number(e.target.value)) {
+      if (swapToggle) {
+        setCriptBotToken(Number(e.target.value));
+      } else {
+        setWeth(Number(e.target.value));
+      }
     }
   };
 
@@ -49,26 +53,49 @@ function Swap() {
           <div className="inner-staking">
             <div className="container">
               <div></div>
-              <div className="staking-card">
-                <h2 className="pb-4">Swap</h2>
+              <div className="staking-card pl-0 pr-0">
+                <div className="flex w-full justify-end ">
+                  <div className="header_Exchange flex justify-around items-center px-3">
+                    <h2 className="">Exchange</h2>
+                    <button className="buy_button text-[25px] px-5 rounded-2xl text-white ">
+                      Buy
+                    </button>
+                  </div>
+                </div>
                 <div className="inner-staking-card">
                   <div style={{ position: "relative" }}>
-                    <div className="swap-input d-flex flex-wrap flex-md-nowrap align-items-end justify-content-between">
-                      <div>
-                        <label className="pb-1" htmlFor="">
+                    <div className="swap-input flex flex-wrap flex-md-nowrap items-center justify-content-between">
+                      <button
+                        className={`header-button  text-[20px] ${
+                          swapToggle ? "header-button_ethereum " : ""
+                        }`}
+                      >
+                        {swapToggle ? (
+                          <div className="responsive_mobile flex items-center w-full">
+                            <img
+                              className="ethereum_img"
+                              src="./public/images/ethereum.png"
+                              alt="ethereum"
+                            />
+                            <span>Ethereum</span>
+                          </div>
+                        ) : (
+                          "$ USD"
+                        )}
+                      </button>
+                      <div className=" responsive_pay flex justify-center items-end flex-col">
+                        <label className="pb-1 w-20" htmlFor="">
                           You Pay
                         </label>
                         <br />
                         <input
+                          className="input_responsive  text-[25px]"
                           type="text"
                           onChange={handleInputSwap}
                           value={swapToggle ? cripBotToken : weth}
                         />
-                        <h6>{swapToggle ? "WETH" : "CripBot token"}</h6>
+                        <h6>{swapToggle ? "ETHEREUM" : "$ USD"}</h6>
                       </div>
-                      <button className="header-button">
-                        {swapToggle ? "WETH" : "CripBot token"}
-                      </button>
                     </div>
                     <div
                       onClick={() => setSwapToggle(!swapToggle)}
@@ -119,13 +146,32 @@ function Swap() {
                         ></path>
                       </svg>
                     </div>
-                    <div className="swap-input d-flex flex-wrap flex-md-nowrap align-items-end justify-content-between mt-4">
-                      <div>
+                    <div className="swap-input d-flex flex-wrap flex-md-nowrap items-center justify-content-between mt-4">
+                      <button
+                        className={`header-button  text-[20px] ${
+                          swapToggle ? "header-button_ethereum " : ""
+                        }`}
+                      >
+                        {swapToggle ? (
+                          "$ USD"
+                        ) : (
+                          <div className="responsive_mobile flex  items-center w-full">
+                            <img
+                              className="ethereum_img"
+                              src="./public/images/ethereum.png"
+                              alt="ethereum"
+                            />
+                            <span>Ethereum</span>
+                          </div>
+                        )}
+                      </button>
+                      <div className="responsive_pay flex justify-center items-end flex-col">
                         <label className="pb-1" htmlFor="">
                           You Get
                         </label>
                         <br />
                         <input
+                          className="input_responsive"
                           type="text"
                           readOnly
                           value={
@@ -134,11 +180,8 @@ function Swap() {
                               : wethCalculatedValue
                           }
                         />
-                        <h6>{swapToggle ? "CripBot token" : "WETH"}</h6>
+                        <h6>{swapToggle ? "$ USD" : "$ ETHEREUM"}</h6>
                       </div>
-                      <button className="header-button">
-                        {swapToggle ? "CripBot token" : "WETH"}
-                      </button>
                     </div>
                   </div>
                   <button

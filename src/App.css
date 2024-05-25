@@ -62,7 +62,7 @@ h6 {
   color: #a9ff8a;
   display: flex;
   color: white;
-  font-size: 18px;
+  font-size: 25px;
   padding: 8px 30px;
   font-family: Rubik;
   font-weight: 500;
@@ -529,7 +529,7 @@ h6 {
     rgba(255, 255, 255, 0.15) 100%
   );
   box-shadow: 0px 4px 49px rgba(0, 7.23, 72.25, 0.12);
-  border-radius: 20px;
+  border-radius: 40px;
   overflow: hidden;
   border: 1.5px rgba(255, 255, 255, 0.3) solid;
   backdrop-filter: blur(25px);
@@ -540,12 +540,12 @@ h6 {
   font-size: 24px;
   font-family: "Rubik";
   font-weight: 600;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   line-height: 36px;
 }
 .inner-staking-card {
   padding: 28px;
-  background: rgba(11, 3, 32, 0.58);
+  /* background: rgba(11, 3, 32, 0.58); */
   border-radius: 5px;
 }
 .inner-staking-card .network {
@@ -621,7 +621,7 @@ h6 {
   box-shadow: none;
 }
 .inner-staking-card .header-button {
-  font-size: 11px !important;
+  /* font-size: 11px !important; */
   padding: 7px 30px !important;
 }
 .inner-staking-card .button-unactive {
@@ -730,7 +730,7 @@ h6 {
   outline: none;
   width: 100%;
   color: white;
-  font-size: 16px;
+  font-size: 19px;
 }
 
 .swap-input input::placeholder {
@@ -753,7 +753,7 @@ h6 {
   line-height: 24px;
 }
 .main-swap .inner-staking {
-  width: 60%;
+  width: 500px;
 }
 .modal-content {
   padding: 28px !important;
