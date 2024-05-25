@@ -1,6 +1,26 @@
+import { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 
 function Staking() {
+
+ const [stakeAmount, setStakeAmount] = useState(""); 
+ const [referralAddress, setReferralAddress] = useState(""); 
+ const [selectedButton, setSelectedButton] = useState(1); 
+
+
+  
+  const handleDaysButton = (buttonId) => {
+   setSelectedButton(buttonId); 
+  };
+  
+
+ const buttons = [
+   { label: "30 Days", id: 1 },
+   { label: "90 Days", id: 2 },
+   { label: "180 Days", id: 3 },
+   { label: "365 Days", id: 4 },
+ ];
+
   return (
     <div className="staking">
       <Navbar />
@@ -14,38 +34,25 @@ function Staking() {
               </div>
               <div className="inner-staking-card">
                 <div className="tabs-button d-flex flex-wrap flex-md-nowrap align-items-center justify-content-between mt-5">
-                  <div className="button-main" style={{ width: "20%" }}>
-                    <button
-                      className="header-button"
-                      style={{ width: "100%", justifyContent: "center" }}
+                  {buttons.map((button) => (
+                    <div
+                      className="button-main"
+                      style={{ width: "20%" }}
+                      key={button.id}
                     >
-                      30 Days
-                    </button>
-                  </div>
-                  <div className="button-main" style={{ width: "20%" }}>
-                    <button
-                      className="button-unactive"
-                      style={{ width: "100%", justifyContent: "center" }}
-                    >
-                      90 Days
-                    </button>
-                  </div>
-                  <div className="button-main" style={{ width: "20%" }}>
-                    <button
-                      className="button-unactive"
-                      style={{ width: "100%", justifyContent: "center" }}
-                    >
-                      180 Days
-                    </button>
-                  </div>
-                  <div className="button-main" style={{ width: "20%" }}>
-                    <button
-                      className="button-unactive"
-                      style={{ width: "100%", justifyContent: "center" }}
-                    >
-                      365 Days
-                    </button>
-                  </div>
+                      <button
+                        onClick={() => handleDaysButton(button.id)}
+                        className={
+                          selectedButton === button.id
+                            ? "header-button"
+                            : "button-unactive"
+                        }
+                        style={{ width: "100%", justifyContent: "center" }}
+                      >
+                        {button.label}
+                      </button>
+                    </div>
+                  ))}
                 </div>
                 <div className="pt-4">
                   <div className="d-flex align-items-center justify-content-between mb-3">
@@ -59,7 +66,8 @@ function Staking() {
                     <input
                       type="search"
                       placeholder="CPT Stake Amount"
-                      value=""
+                      onChange={(e) => setStakeAmount(e.target.value)}
+                      value={stakeAmount}
                       style={{ color: "rgb(255, 255, 255)" }}
                     />
                   </div>
@@ -69,8 +77,9 @@ function Staking() {
                   <div className="group-inputs-max">
                     <input
                       type="search"
+                      onChange={(e) => setReferralAddress(e.target.value)}
                       placeholder="0x0...."
-                      value=""
+                      value={referralAddress}
                       style={{ color: "rgb(255, 255, 255)" }}
                     />
                   </div>
