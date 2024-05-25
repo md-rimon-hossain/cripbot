@@ -1,48 +1,10 @@
-// import {  useEffect, useState } from "react";
-import { ArrowRightLeft } from "lucide-react";
+
+
 import Navbar from "../../components/Navbar/Navbar";
 
 import "./Bridge.css";
 
 function Bridge() {
-  // const [swapToggle, setSwapToggle] = useState(false);
-  // const [cripBotToken, setCriptBotToken] = useState(0);
-  // const [weth, setWeth] = useState(0);
-  // const [cripBotTokenCalculatedValue, setCripBotTokenCalculatedValue] =
-  //   useState(0);
-  // const [wethCalculatedValue, setWethCalculatedValue] = useState(0);
-
-  // const handleInputSwap = (e) => {
-  //   if (Number(e.target.value)) {
-  //     if (swapToggle) {
-  //       setCriptBotToken(Number(e.target.value));
-  //     } else {
-  //       setWeth(Number(e.target.value));
-  //     }
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   if (swapToggle) {
-  //     if (cripBotToken == 0) {
-  //       setCripBotTokenCalculatedValue(0);
-  //     } else if (cripBotToken > 0) {
-  //       setCripBotTokenCalculatedValue(cripBotToken + 1);
-  //     }
-  //   } else {
-  //     if (weth == 0) {
-  //       setWethCalculatedValue(0);
-  //     } else if (weth > 0) {
-  //       setWethCalculatedValue(cripBotToken + 2);
-  //     }
-  //   }
-  // }, [
-  //   cripBotToken,
-  //   weth,
-  //   swapToggle,
-  //   setCripBotTokenCalculatedValue,
-  //   setWethCalculatedValue,
-  // ]);
 
   return (
     <div>
@@ -59,19 +21,8 @@ function Bridge() {
 
                   <p className="text-[17px]">YOUR PURCHASED $SMART = 0.0</p>
                 </div>
-                <div className="flex w-full items-center justify-between">
-                  <button className="header-button py-4  text-[20px">
-                    <div className="responsive_mobile flex items-center w-full">
-                      <img
-                        className="bnb_img rounded-full w-8"
-                        src="/images/bnb.png"
-                        alt="ethereum"
-                      />
-                      &nbsp;
-                      <span>BNB</span>
-                    </div>
-                  </button>
-                  <ArrowRightLeft className="text-[25px] text-white cursor-pointer" />
+                <div className="flex w-full items-center justify-center">
+                  
                   <button className="header-button py-4 text-[20px">
                     <span>Ethereum</span>
                   </button>
