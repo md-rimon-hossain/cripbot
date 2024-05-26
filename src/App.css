@@ -545,6 +545,7 @@ h6 {
 }
 .inner-staking-card {
   padding: 28px;
+  padding-top: 0px;
   /* background: rgba(11, 3, 32, 0.58); */
   border-radius: 5px;
 }
@@ -585,12 +586,12 @@ h6 {
   top: -4px;
 }
 .inner-staking {
-  width: 70%;
+  width: 58%;
   margin: auto;
 }
 .inner-staking-card h3 {
   color: white;
-  font-size: 14px;
+  font-size: 17px;
   font-family: Rubik;
   font-weight: 400;
   line-height: 21px;
@@ -622,19 +623,20 @@ h6 {
 }
 .inner-staking-card .header-button {
   /* font-size: 11px !important; */
-  padding: 7px 30px !important;
+  /* padding: 7px 30px !important; */
 }
 .inner-staking-card .button-unactive {
   font-size: 11px !important;
-  padding: 7px 30px !important;
+  padding: 7px 20px !important;
 }
 .inner-staking-card p {
   color: #a4a4a4;
-  font-size: 14px;
+  font-size: 19px;
   font-family: "Rubik";
   font-weight: 300;
   line-height: 21px;
   text-align: center;
+  padding-top: 5px !important;
 }
 .inner-staking-card h4 {
   color: white;
