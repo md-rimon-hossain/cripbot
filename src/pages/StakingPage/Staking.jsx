@@ -9,7 +9,7 @@ function Staking() {
  const [stakeAmount, setStakeAmount] = useState(""); 
 //  const [referralAddress, setReferralAddress] = useState(""); 
   const [selectedButton, setSelectedButton] = useState(1); 
-    const [referrersCode, setReferrersCode] = useState("Here you referral code");
+    const [referrersCode, setReferrersCode] = useState("Here your referral code");
 
 
   
@@ -79,6 +79,16 @@ function Staking() {
                    <button className="header-button stake_btn">Stake</button>
                  </div>
                </div>
+
+               <div className="pt-4 d-flex align-items-center justify-between responsive_flex">
+                 <div>
+                   <h4>Reward Balance</h4>
+                   <p className="text-[20px]">0</p>
+                 </div>
+                 <button className="header-button reward_btn">
+                   Reward Claim
+                 </button>
+               </div>
                <div className="pt-4">
                  <h4 className="pb-2">Referral Address</h4>
                  <div className="group-inputs-max">
@@ -91,27 +101,9 @@ function Staking() {
                      value={referrersCode}
                      style={{ color: "rgb(255, 255, 255)" }}
                    />
-                   <CopyToClipboardButton
-                     textToCopy={referrersCode} />
+                   <CopyToClipboardButton textToCopy={referrersCode} />
                  </div>
                </div>
-               <div className="pt-4 d-flex align-items-center justify-between responsive_flex">
-                 <div>
-                   <h4>Reward Balance</h4>
-                   <p className="text-[20px]">0</p>
-                 </div>
-                 <button className="header-button reward_btn">
-                   Reward Claim
-                 </button>
-               </div>
-             </div>
-             <div className="pt-4 pr-6 pb-4 pl-6 d-flex align-items-center justify-content-between">
-               <button
-                 className="header-button"
-                 style={{ width: "100%", justifyContent: "center" }}
-               >
-                 Referral
-               </button>
              </div>
            </div>
          </div>
