@@ -54,7 +54,7 @@ function Swap() {
             <div className="container">
               <div></div>
               <div className="staking-card pl-0 pr-0">
-                <div className="flex w-full justify-end ">
+                <div className="flex w-full justify-end mb-3">
                   <div className="header_Exchange flex justify-around items-center px-3">
                     <h2 className="">Exchange</h2>
                     <button className="buy_button text-[25px] px-5 rounded-2xl text-white ">
