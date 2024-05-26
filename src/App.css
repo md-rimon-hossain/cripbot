@@ -139,10 +139,16 @@ h6 {
 }
 .hero-main {
 
-  background-image: url("../public/images/home-header.png") !important;
+  background-image: url("../public/images/home-header.png");
   background-repeat: no-repeat !important;
   background-size: cover !important;
   /* height: 100vh; */
+}
+
+@media (max-width:600px) {
+  .hero-main {
+  background-image: url("../public/images/home-header-mobile.png") !important;
+}
 }
 .inner-hero {
   padding-top: 500px;
