@@ -9,7 +9,7 @@ function Home() {
   return (
     <div>
       <div
-        className={`hero-main bg relative`}
+        className={`hero-main relative`}
       >
         <div className="bottm-bg">
           <div className="inner-bg">
