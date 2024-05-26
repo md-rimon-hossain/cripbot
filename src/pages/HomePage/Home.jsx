@@ -1,15 +1,16 @@
 import {  useNavigate } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
+import "./home.css"
 
 function Home() {
   const navigate = useNavigate()
   return (
     <div>
-      <div className="hero-main">
+      <div className="hero-main relative">
         <div className="bottm-bg">
           <div className="inner-bg">
-            <Navbar/>
+            <Navbar />
             <div className="inner-hero">
               <div className="container">
                 <div className="tvl-section">
@@ -30,7 +31,12 @@ function Home() {
                         <br />
                         UNLOCK THE FUTURE OF PLAY WITH CripBotAI
                       </p>
-                      <button onClick={()=> navigate("/swap")} className="header-button">Buy CripBotAI</button>
+                      <button
+                        onClick={() => navigate("/swap")}
+                        className="header-button"
+                      >
+                        Buy CripBotAI
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -144,7 +150,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
