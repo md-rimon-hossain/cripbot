@@ -3,10 +3,6 @@ import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import "./home.css"
 
-import heroMain from "../../../public/images/home-header.png"
-import defaultImage from "../../../public/images/default.png"
-
-console.log(heroMain)
 
 function Home() {
   const navigate = useNavigate()
@@ -14,9 +10,6 @@ function Home() {
     <div>
       <div
         className={`hero-main bg relative`}
-        style={{
-          backgroundImage: `url(${heroMain ? heroMain : defaultImage})`,
-        }}
       >
         <div className="bottm-bg">
           <div className="inner-bg">

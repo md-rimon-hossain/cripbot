@@ -4,6 +4,10 @@
 #root {
   overflow: hidden !important;
 }
+body {
+  background-color: #32234c !important;
+  background-image: url("../public/images/default.png");
+}
 p {
   margin: 0px !important;
   padding: 0px !important;
@@ -135,7 +139,7 @@ h6 {
 }
 .hero-main {
 
-  /* background-image: url("../public/images/home-header.png") !important; */
+  background-image: url("../public/images/home-header.png") !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   /* height: 100vh; */
