@@ -29,7 +29,7 @@ function Staking() {
      <div>
        <div className="Toastify"></div>
        <div className="inner-staking">
-         <div className="container">
+         <div className="w-[100%]">
            <div className="staking-card">
              <div className="centered-container">
                <h2 className="stake_text">Stake</h2>
@@ -39,7 +39,7 @@ function Staking() {
                  {buttons.map((button) => (
                    <div
                      className="button-main"
-                     style={{ width: "20%" }}
+                    //  style={{ width: "20%" }}
                      key={button.id}
                    >
                      <button
