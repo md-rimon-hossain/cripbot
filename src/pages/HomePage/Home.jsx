@@ -8,6 +8,7 @@ function Home() {
   return (
     <div>
       <div className="hero-main relative">
+        
         <div className="bottm-bg">
           <div className="inner-bg">
             <Navbar />
